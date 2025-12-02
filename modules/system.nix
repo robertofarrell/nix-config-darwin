@@ -27,6 +27,7 @@
       dock = {
         autohide = true;
         show-recents = false;  # disable recent apps
+	mru-spaces = false; # don't rearrange spaces based on use
       };
 
       NSGlobalDomain = {

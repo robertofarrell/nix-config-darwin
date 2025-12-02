@@ -21,12 +21,16 @@
   #
   # Related Discussion: https://discourse.nixos.org/t/darwin-again/29331
   environment.systemPackages = with pkgs; [
+    claude-code
+    devbox
     dfu-programmer
     git
+    lazygit
     m-cli
     musikcube
     neovim
     tmux
+    qmk
     zed-editor
   ];
   environment.variables.EDITOR = "nvim";
@@ -54,6 +58,7 @@
     brews = [
       # "aria2"  # download tool
       "ffmpeg"
+      "jiratui"
       "node_exporter"
       "prometheus"
       "yt-dlp"
@@ -62,11 +67,16 @@
     # `brew install --cask`
     # TODO Feel free to add your favorite apps here.
     casks = [
+      "1password-cli"
+      "chatgpt"
+      "ghostty"
       "karabiner-elements"
       "leader-key"
+      "logi-options+"
       "mimestream"
       "notion"
       "raycast"
+      "ticktick"
       "utm"
     ];
   };
