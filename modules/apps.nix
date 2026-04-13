@@ -21,10 +21,11 @@
   #
   # Related Discussion: https://discourse.nixos.org/t/darwin-again/29331
   environment.systemPackages = with pkgs; [
-    claude-code
     devbox
+    direnv
     dfu-programmer
     git
+    htop
     lazygit
     m-cli
     musikcube
@@ -46,11 +47,13 @@
       autoUpdate = true; # Fetch the newest stable branch of Homebrew's git repo
       upgrade = true; # Upgrade outdated casks, formulae, and App Store apps
       # 'zap': uninstalls all formulae(and related files) not listed in the generated Brewfile
-      cleanup = "zap";
+      # Disabling this until I figure out how to install op-fast
+      # cleanup = "zap";
     };
 
     taps = [
       # "homebrew/services"
+      # "anomalyco/opencode"
     ];
 
     # `brew install`
@@ -59,8 +62,15 @@
       # "aria2"  # download tool
       "ffmpeg"
       "jiratui"
+      "kanata"
+      "kanata-tray"
       "node_exporter"
-      "prometheus"
+      "nmap"
+      "opencode"
+      "postgresql@18"
+      "rainfrog"
+      "sslscan"
+      "uv"
       "yt-dlp"
     ];
 
@@ -69,15 +79,21 @@
     casks = [
       "1password-cli"
       "chatgpt"
+      "claude-code"
       "ghostty"
       "karabiner-elements"
       "leader-key"
       "logi-options+"
       "mimestream"
       "notion"
+      # Failed to install but required so installed manually
+      # "cometkim/tap/op-fast"
+      "qmk-toolbox"
       "raycast"
+      "telegram"
       "ticktick"
       "utm"
+      "whatsapp"
     ];
   };
 }

@@ -55,8 +55,8 @@
         ./modules/nix-core.nix
         ./modules/system.nix
         ./modules/apps.nix
-
         ./modules/host-users.nix
+        ./modules/zsh.nix
       ];
     };
     # nix code formatter
