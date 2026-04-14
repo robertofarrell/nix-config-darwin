@@ -56,6 +56,7 @@
         ./modules/system.nix
         ./modules/apps.nix
         ./modules/host-users.nix
+        ./modules/tmux.nix
         ./modules/zsh.nix
       ];
     };

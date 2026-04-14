@@ -30,7 +30,6 @@
     m-cli
     musikcube
     neovim
-    tmux
     qmk
     zed-editor
   ];
@@ -68,7 +67,6 @@
       "nmap"
       "opencode"
       "postgresql@18"
-      "rainfrog"
       "sslscan"
       "uv"
       "yt-dlp"
@@ -78,7 +76,6 @@
     # TODO Feel free to add your favorite apps here.
     casks = [
       "1password-cli"
-      "chatgpt"
       "claude-code"
       "ghostty"
       "karabiner-elements"
