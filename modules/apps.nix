@@ -29,11 +29,9 @@
     lazygit
     m-cli
     musikcube
-    neovim
     qmk
-    zed-editor
   ];
-  environment.variables.EDITOR = "nvim";
+  # EDITOR is set via programs.neovim.defaultEditor in home.nix
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
   #
@@ -70,6 +68,7 @@
       "sslscan"
       "uv"
       "yt-dlp"
+      "zellij"
     ];
 
     # `brew install --cask`
@@ -77,11 +76,16 @@
     casks = [
       "1password-cli"
       "claude-code"
+      "divvy"
+      # "hammerspoon" - installed for PaperWM.spoon but didn't work well enough
+      "font-fira-code-nerd-font"
+      "font-jetbrains-mono-nerd-font"
       "ghostty"
       "karabiner-elements"
       "leader-key"
       "logi-options+"
       "mimestream"
+      "mos"
       "notion"
       # Failed to install but required so installed manually
       # "cometkim/tap/op-fast"
@@ -91,6 +95,7 @@
       "ticktick"
       "utm"
       "whatsapp"
+      "zed"
     ];
   };
 }

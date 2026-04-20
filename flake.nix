@@ -26,6 +26,10 @@
       url = "github:lnl7/nix-darwin/nix-darwin-25.05";
       inputs.nixpkgs.follows = "nixpkgs-darwin";
     };
+    home-manager = {
+      url = "github:nix-community/home-manager/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs-darwin";
+    };
   };
 
   # The `outputs` function will return all the build results of the flake.
@@ -37,6 +41,7 @@
     self,
     nixpkgs,
     darwin,
+    home-manager,
     ...
   }: let
     username = "rob";
@@ -56,8 +61,13 @@
         ./modules/system.nix
         ./modules/apps.nix
         ./modules/host-users.nix
-        ./modules/tmux.nix
-        ./modules/zsh.nix
+        home-manager.darwinModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.${username} = import ./modules/home.nix;
+          home-manager.extraSpecialArgs = specialArgs;
+        }
       ];
     };
     # nix code formatter

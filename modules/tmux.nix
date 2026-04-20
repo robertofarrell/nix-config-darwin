@@ -10,9 +10,6 @@
   programs.tmux = {
     enable = true;
 
-    # Use 256 colour terminal
-    enableSensible = true;
-
     extraConfig = ''
       # General
       set -g default-terminal "screen-256color"

@@ -14,10 +14,10 @@
     enableCompletion = true;
 
     # Enable syntax highlighting (like fish)
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
 
-    # Shell-wide config appended to /etc/zshrc
-    interactiveShellInit = ''
+    # Shell-wide config appended to ~/.zshrc
+    initContent = ''
       # History
       HISTSIZE=10000
       SAVEHIST=10000
