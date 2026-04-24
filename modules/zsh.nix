@@ -62,6 +62,9 @@
 
       # GitHub token from 1Password
       export GH_TOKEN="$(OP_ACCOUNT=ofarrell.1password.com op-fast read "op://Private/GitHub - Personal Access Token/credential" 2>/dev/null)"
+
+      # iTerm2 shell integration (script installed via iTerm2 > Install Shell Integration)
+      test -e "$HOME/.iterm2_shell_integration.zsh" && source "$HOME/.iterm2_shell_integration.zsh"
     '';
   };
 }

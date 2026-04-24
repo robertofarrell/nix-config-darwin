@@ -81,6 +81,7 @@
       "font-fira-code-nerd-font"
       "font-jetbrains-mono-nerd-font"
       "ghostty"
+      "iterm2"
       "karabiner-elements"
       "leader-key"
       "logi-options+"
@@ -94,6 +95,7 @@
       "telegram"
       "ticktick"
       "utm"
+      "uhk-agent"
       "whatsapp"
       "zed"
     ];
