@@ -56,14 +56,19 @@
     # `brew install`
     # TODO Feel free to add your favorite apps here.
     brews = [
+      "awscli"
       # "aria2"  # download tool
+      "container"
       "ffmpeg"
+      "flyctl"
+      "fresh-editor"
       "jiratui"
-      "kanata"
-      "kanata-tray"
+      "herdr"
+      "micasa"
       "node_exporter"
       "nmap"
       "opencode"
+      "pi-coding-agent"
       "postgresql@18"
       "sslscan"
       "uv"
@@ -75,10 +80,11 @@
     # TODO Feel free to add your favorite apps here.
     casks = [
       "1password-cli"
-      "claude-code"
       "divvy"
       # "hammerspoon" - installed for PaperWM.spoon but didn't work well enough
+      "font-fira-code"
       "font-fira-code-nerd-font"
+      "font-jetbrains-mono"
       "font-jetbrains-mono-nerd-font"
       "ghostty"
       "iterm2"
@@ -86,17 +92,16 @@
       "leader-key"
       "logi-options+"
       "mimestream"
-      "mos"
-      "notion"
       # Failed to install but required so installed manually
       # "cometkim/tap/op-fast"
+      "orbstack"
       "qmk-toolbox"
       "raycast"
       "telegram"
       "ticktick"
       "utm"
       "uhk-agent"
-      "whatsapp"
+      #"whatsapp"
       "zed"
     ];
   };

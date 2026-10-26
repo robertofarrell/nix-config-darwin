@@ -27,15 +27,18 @@
       dock = {
         autohide = true;
         show-recents = false;  # disable recent apps
-	mru-spaces = false; # don't rearrange spaces based on use
+        mru-spaces = false; # don't rearrange spaces based on use
       };
 
       NSGlobalDomain = {
-	# Always show the scrollbars
-	AppleShowScrollBars = "Always";
+        # Always show the scrollbars
+        AppleShowScrollBars = "Always";
 
-	# Jump to the spot that's clicked in the scroll bar
-	AppleScrollerPagingBehavior = true;
+        # Jump to the spot that's clicked in the scroll bar
+        AppleScrollerPagingBehavior = true;
+
+        # Allow keyboard navigation of dialog buttons
+        AppleKeyboardUIMode = 3;
 
         InitialKeyRepeat = 15;  # normal minimum is 15 (225 ms), maximum is 120 (1800 ms)
         KeyRepeat = 3;  # normal minimum is 2 (30 ms), maximum is 120 (1800 ms)
